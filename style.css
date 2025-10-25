@@ -1,5 +1,86 @@
-body { font-family: sans-serif; background-color: #fdf6e3; color: #333; }
-header { background-color: #f4e1c1; padding: 1em; }
-nav a { margin-right: 1em; text-decoration: none; color: #333; font-weight: bold; }
-a:hover { text-decoration: underline; }
-main { padding: 1em; }
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf6e3; /* very light brown / cream */
+  color: #5b3a29; /* darker brown text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header / Navigation */
+header {
+  background-color: #d7bfa3; /* soft light brown */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #5b3a29;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #7c4c2b; /* slightly darker on hover */
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+h1 {
+  color: #7c4c2b;
+  margin-bottom: 1rem;
+}
+
+/* File Cards */
+.file-card {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f7e8d0; /* very light tan for card background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: inline-block;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.file-card img {
+  max-width: 200px;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #d7bfa3;
+}
+
+/* Download Links */
+.file-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #d7bfa3;
+  color: #5b3a29;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.file-card a:hover {
+  background-color: #c4a17a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .file-card {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
