@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Templates</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-<h1>Templates</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="images.html">Images</a>
-<a href="books.html">Books</a>
-<a href="templates.html">Templates</a>
-</nav>
-</header>
-<main>
-<ul id="file-list"></ul>
-</main>
-<script src="script.js"></script>
-</body>
-</html>
+fetch('public/templates.json')  // or templates.json
+  .then(res => res.json())
+  .then(files => {
+    const container = document.getElementById('book-container'); // id in main
+    files.forEach(file => {
+      const div = document.createElement('div');
+      div.className = 'file-card';
+
+      const a = document.createElement('a');
+      a.href = `public/books/${file}`; // or templates
+      a.download = file;
+      a.textContent = file;
+      div.appendChild(a);
+
+      container.appendChild(div);
+    });
+  });
