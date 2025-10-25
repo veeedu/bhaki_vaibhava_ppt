@@ -23,29 +23,7 @@
 
   <script src="script.js"></script>
   <script>
-    // Display images
-    fetch('public/images.json')
-      .then(res => res.json())
-      .then(files => {
-        const container = document.getElementById('image-container');
-        files.forEach(file => {
-          const div = document.createElement('div');
-          div.className = 'file-card';
-
-          const img = document.createElement('img');
-          img.src = `public/images/${file}`;
-          img.alt = file;
-          div.appendChild(img);
-
-          const a = document.createElement('a');
-          a.href = `public/images/${file}`;
-          a.download = file;
-          a.textContent = 'Download';
-          div.appendChild(a);
-
-          container.appendChild(div);
-        });
-      });
+    loadFiles('images.json', 'images', 'image-container');
   </script>
 </body>
 </html>
