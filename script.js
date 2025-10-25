@@ -24,8 +24,3 @@ function loadFiles(jsonFile, folder, containerId) {
       });
     });
 }
-
-// Example usage in HTML:
-// loadFiles('images.json', 'images', 'image-container');
-// loadFiles('books.json', 'books', 'book-container');
-// loadFiles('templates.json', 'templates', 'template-container');
