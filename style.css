@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #fdf6e3; /* very light brown / cream */
@@ -7,7 +6,6 @@ body {
   padding: 0;
 }
 
-/* Header / Navigation */
 header {
   background-color: #d7bfa3; /* soft light brown */
   padding: 1rem 2rem;
@@ -23,11 +21,10 @@ nav a {
 }
 
 nav a:hover {
-  color: #7c4c2b; /* slightly darker on hover */
+  color: #7c4c2b;
   text-decoration: underline;
 }
 
-/* Main Content */
 main {
   padding: 2rem;
 }
@@ -37,11 +34,10 @@ h1 {
   margin-bottom: 1rem;
 }
 
-/* File Cards */
 .file-card {
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background-color: #f7e8d0; /* very light tan for card background */
+  background-color: #f7e8d0; /* very light tan */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   display: inline-block;
@@ -56,7 +52,6 @@ h1 {
   border: 1px solid #d7bfa3;
 }
 
-/* Download Links */
 .file-card a {
   display: inline-block;
   margin-top: 0.5rem;
@@ -72,7 +67,6 @@ h1 {
   background-color: #c4a17a;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .file-card {
     width: 100%;
